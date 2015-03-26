@@ -11,6 +11,7 @@ gem 'pg'
 
 gem 'dotenv-rails'
 
+gem 'jwt_authentication', github: 'Rezonans/jwt_authentication'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
