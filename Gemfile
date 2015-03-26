@@ -27,3 +27,8 @@ gem 'jwt_authentication', github: 'Rezonans/jwt_authentication'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+gem 'sass-rails'
+gem 'uglifier'
+
+gem 'bower-rails'
