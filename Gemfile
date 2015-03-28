@@ -1,34 +1,27 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.2.1'
-
 gem 'rails-api'
-
-gem 'spring', :group => :development
-
-
 gem 'pg'
-
 gem 'dotenv-rails'
-
 gem 'jwt_authentication', github: 'Rezonans/jwt_authentication'
 
-# To use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano', :group => :development
-
-# To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
-
-gem 'sass-rails'
 gem 'uglifier'
 
-gem 'bower-rails'
+gem 'angular-rails-templates', github: 'sars/angular-rails-templates'
+gem 'spa_rails', github: 'Rezonans/spa_rails'
+
+group :development do
+  gem 'spring'
+  gem 'guard-livereload', '~> 2.4', require: false
+end
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-angular'
+  gem 'rails-assets-ui-utils'
+  gem 'rails-assets-ui-router'
+  gem 'rails-assets-restangular', '1.4.0'
+  gem 'rails-assets-lodash'
+  gem 'rails-assets-angular-bootstrap'
+  gem 'rails-assets-bootstrap'
+end

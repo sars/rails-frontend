@@ -7,7 +7,7 @@ require "active_job/railtie"
 require "active_record/railtie"
 require "action_controller/railtie"
 require "action_mailer/railtie"
-require "action_view/railtie"
+#require "action_view/railtie"
 require "sprockets/railtie"
 # require "rails/test_unit/railtie"
 
@@ -31,5 +31,7 @@ module Src
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    config.angular_templates.inside_paths << Rails.root.join('frontend')
   end
 end
